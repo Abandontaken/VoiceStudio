@@ -9,7 +9,7 @@
 Design proposal: [installer plans and recovery review](specs/installer-redesign/readme.md).
 This proposal does not change the implemented behavior described below.
 
-The top bar keeps its shortcuts quiet so the work area leads: Get Pro, the GitHub Star button and search are borderless 28px ghost controls on one line with the account and notifications corner. The Star button shows a star icon, label and the exact star count (the star fills on hover), taken from GitHub's small public endpoint. It refreshes when shown and every 20 minutes while visible; browser caching keeps repeat requests small. A bundled count remains visible if GitHub is unavailable. Requests send no credentials or referrer, and clicking the shortcut opens GitHub in the external browser. Community, donation and follow links live on the Support page (Settings → Support). Get Pro remains in the top bar. The top bar's page title is shown once: when the page's own side pane carries the same title, the top bar leaves it to that pane (it stays available to screen readers) and shows it again when the pane is collapsed.
+The top bar keeps its shortcuts quiet so the work area leads: Get Pro, the GitHub Star button and search are borderless 28px ghost controls on one line with the account and notifications corner. The Star button shows a star icon, label and the exact star count (the star fills on hover), taken from GitHub's small public endpoint. It refreshes when shown and every 20 minutes while visible; browser caching keeps repeat requests small. A bundled count remains visible if GitHub is unavailable. Requests send no credentials or referrer, and clicking the shortcut opens GitHub in the external browser. Community, donation and follow links live on the Support page (Settings → Support). The Pro shortcut remains in the top bar and follows the account: signed out it reads Get Pro, a signed-in account without Pro sees Upgrade to Pro (both open the `/pro` page), and a signed-in Pro account sees Get Pro app, which opens the Pro download page on the account dashboard in the external browser, because VoiceStudio Pro is a separate build. The top bar's page title is shown once: when the page's own side pane carries the same title, the top bar leaves it to that pane (it stays available to screen readers) and shows it again when the pane is collapsed.
 
 Low-disk warnings in the notification menu open Settings > Storage, where users can inspect disk use and clear temporary files.
 
@@ -121,9 +121,15 @@ Electron translates enabled WinINET `ProxyServer` maps (`http=…`, `https=…`,
 Loopback hosts remain excluded, and existing `NO_PROXY` entries are retained.
 Proxy credentials are never logged by this normalization.
 
-Simple WinINET bypass hosts and `*.domain` suffix rules are retained. Windows-only
-bypass patterns such as `<local>` stop setup with localized proxy configuration
-guidance before uv runs; dropping them would silently change routing semantics.
+Simple WinINET bypass hosts and `*.domain` suffix rules are retained. Numeric prefix
+rules such as `10.*` or `192.168.*` become CIDR blocks (`10.0.0.0/8`,
+`192.168.0.0/16`) and also bypass IP-literal download targets inside them, so the
+default list Clash and v2rayN write works. `<local>` keeps the dotless hosts of
+configured download endpoints (`UV_INDEX_URL`, `UV_PYTHON_INSTALL_MIRROR`,
+`HF_ENDPOINT` and similar) direct; the pinned public hosts never need it. Other
+Windows-only bypass patterns (for example `172.1?.*` or a prefix with an octet above
+255) stop setup with localized proxy configuration guidance before uv runs; dropping
+them would silently change routing semantics.
 Fully quit Electron, set an explicit proxy URL and the intended `NO_PROXY` exclusions in a terminal, then launch Electron from that same terminal. Retrying or relaunching from the existing process cannot pick up new environment variables. PAC remains handled by the existing system networking behavior; use the actual proxy protocol,
 not the `socks=` registry syntax. This repair applies to packaged runtime setup;
 it does not change browser networking or global Windows proxy settings.
