@@ -2942,7 +2942,8 @@
     "missingSpeech": "Konuşma eksik veya okunamıyor. Dışa aktarmadan önce ilgili bölümü yeniden oluşturun.",
     "timingOverflow": "Konuşma ayrılan süreyi aşıyor. Çeviriyi kısaltın veya kesin zaman aralığını ya da videoyu uzatmayı seçin.",
     "sourceChanged": "Bu dublaj oluşturulurken altyazılar değişti. Önceki parça korundu; yeni altyazıları kullanmak için yeniden oluşturun.",
-    "backgroundUnavailable": "Özgün ses korunamadı. Arka plan ayrımını ve diyalog zamanlarını kontrol edip yeniden deneyin veya yalnızca konuşmayı dışa aktarmayı seçin."
+    "backgroundUnavailable": "Özgün ses korunamadı. Arka plan ayrımını ve diyalog zamanlarını kontrol edip yeniden deneyin veya yalnızca konuşmayı dışa aktarmayı seçin.",
+    "untranslated": "Bu parçanın henüz çevirisi yok: tüm satırlar hâlâ kaynak metinle aynı. Çevirin veya kaynak dili seçin, ardından yeniden oluşturun."
   },
   "dubStyle": {
     "label": "Çeviri üslubu talimatları",
@@ -3359,7 +3360,8 @@
     "denoise": "Referans gürültüsünü temizle",
     "polish": "Üretilen sesi iyileştir",
     "basics": "1× normal hızdır. Doğal zamanlama için süreyi boş bırakın.",
-    "hint": "Genellikle varsayılanları koruyun. Yönlendirme istemin etkisini ayarlar; diğer kontroller modelin sesi oluşturma şeklini değiştirir. Her seferinde birini değiştirin."
+    "hint": "Genellikle varsayılanları koruyun. Yönlendirme istemin etkisini ayarlar; diğer kontroller modelin sesi oluşturma şeklini değiştirir. Her seferinde birini değiştirin.",
+    "pauses_hint": "Boş satırlarda sessizlik ekler. 0, motorun kendi temposunu korur."
   },
   "languagePicker": {
     "dialectFollowsVoice": "{{model}} için tek bir {{language}} modeli var, bu yüzden aksan referans sesi izler.",

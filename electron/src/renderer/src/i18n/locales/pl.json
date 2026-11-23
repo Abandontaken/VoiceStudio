@@ -2968,7 +2968,8 @@
     "missingSpeech": "Brak mowy lub nie można jej odczytać. Przed eksportem wygeneruj ponownie dany segment.",
     "timingOverflow": "Mowa przekracza przydzielony czas. Skróć tłumaczenie albo wybierz ścisły przedział czasu lub wydłużenie filmu.",
     "sourceChanged": "Napisy zmieniły się podczas generowania tego dubbingu. Poprzednią ścieżkę zachowano; wygeneruj ponownie, aby użyć nowych napisów.",
-    "backgroundUnavailable": "Nie udało się zachować oryginalnego dźwięku. Sprawdź oddzielenie tła i czasy dialogów, a następnie spróbuj ponownie lub wybierz eksport samej mowy."
+    "backgroundUnavailable": "Nie udało się zachować oryginalnego dźwięku. Sprawdź oddzielenie tła i czasy dialogów, a następnie spróbuj ponownie lub wybierz eksport samej mowy.",
+    "untranslated": "Ta ścieżka nie ma jeszcze tłumaczenia: wszystkie linie nadal są takie same jak tekst źródłowy. Przetłumacz ją lub wybierz język źródłowy, a potem wygeneruj ponownie."
   },
   "dubStyle": {
     "label": "Instrukcje stylu tłumaczenia",
@@ -3385,7 +3386,8 @@
     "denoise": "Usuń szum z nagrania wzorcowego",
     "polish": "Dopracuj wygenerowany dźwięk",
     "basics": "1× to normalna prędkość. Pozostaw czas pusty, aby zachować naturalne tempo.",
-    "hint": "Zwykle najlepiej pozostawić wartości domyślne. Sterowanie określa wpływ polecenia; pozostałe ustawienia zmieniają sposób budowania dźwięku. Zmieniaj jedno naraz."
+    "hint": "Zwykle najlepiej pozostawić wartości domyślne. Sterowanie określa wpływ polecenia; pozostałe ustawienia zmieniają sposób budowania dźwięku. Zmieniaj jedno naraz.",
+    "pauses_hint": "Dodaje ciszę przy pustych wierszach. 0 zachowuje własne tempo silnika."
   },
   "languagePicker": {
     "dialectFollowsVoice": "{{model}} ma jeden model dla języka: {{language}}, więc akcent podąża za głosem referencyjnym.",
