@@ -494,6 +494,9 @@
     "deleteTitle": "删除模型",
     "deleteConfirm": "删除{{repoId}}？您可以稍后重新安装。",
     "deleted": "已删除 {{repoId}}",
+    "engineDeleteTitle": "删除引擎",
+    "engineDeleteConfirm": "要删除 {{name}} 以及 VoiceStudio 为其安装的文件吗？共享下载缓存中的模型会保留。之后可以重新安装。",
+    "engineDeleteFailed": "无法删除",
     "reinstall": "重新安装",
     "reinstallTitle": "重新安装模型",
     "reinstallConfirm": "重新安装{{repoId}}？这将删除当前副本并再次下载。",
@@ -1044,7 +1047,7 @@
   },
   "common": {
     "stop": "停止",
-    "resume": "恢复",
+    "resume": "继续",
     "paused": "已暂停",
     "open": "打开",
     "cancel": "取消",
@@ -1663,6 +1666,10 @@
     "aec_row_title": "为听写启用回声消除",
     "aec_experimental": "实验性",
     "aec_hint": "可在播放预览、配音或视频时听写，而不会转写应用自身的声音。会增加少量音频处理；如果不会在播放时听写，请保持关闭。",
+    "compact_title": "紧凑浮层",
+    "compact_row_title": "按住听写的紧凑浮层",
+    "compact_description": "按住快捷键期间，只显示实时音量表和计时器，而不显示完整的录音器和转写文本。松开后文本仍会照常插入。",
+    "compact_save_failed": "无法保存此设置，请重试。",
     "cleanup_title": "文本整理",
     "spoken_punctuation": "语音标点",
     "spoken_punctuation_desc": "说 “comma”, “period”, “question mark”, “new line” 即可输入。仅支持英语。"
@@ -2045,9 +2052,11 @@
   "privacy": {
     "translator_online": "通过 {{provider}} 在线翻译",
     "analytics_title": "帮助改进 VoiceStudio",
+    "analytics_subtitle": "默认关闭。引擎、语言、时长、字符数和错误类型的匿名统计。绝不发送您的文本或音频。",
     "translator_offline": "仅离线",
     "translator_unknown": "未知",
     "watermark_title": "不可见水印",
+    "watermark_subtitle": "默认开启。将生成的音频标记为 AI 制作，以便日后识别。仅影响从现在起生成的音频。",
     "change_translator": "更改翻译引擎"
   },
   "updates": {
@@ -2185,6 +2194,7 @@
     "cause_noexec": "引擎文件夹不允许运行程序",
     "hint_noexec": "此驱动器以 noexec 方式挂载。请选择其他驱动器上的文件夹,或不带 noexec 重新挂载后重试。",
     "cause_download": "下载在设置完成前中断了",
+    "download_failed_host": "无法从 {{host}} 下载。",
     "hint_download": "重试即可继续。如果仍然中断,请换一个网络、关闭 VPN 或选择其他下载区域。",
     "cause_illegal_instruction": "引擎停在了这台电脑无法执行的指令上",
     "hint_illegal_instruction": "处理器可能缺少引擎库所需的功能。请复制诊断信息,并连同处理器型号一起附在报告中。",
@@ -4234,6 +4244,8 @@
       "speed": "{{speed}}/秒",
       "eta": "大约还需 {{time}}",
       "estimating": "正在估算剩余时间…",
+      "waiting_metered": "此 Wi-Fi 为按流量计费网络…",
+      "use_connection": "使用此连接下载",
       "waiting_network": "正在等待网络连接…"
     }
   },

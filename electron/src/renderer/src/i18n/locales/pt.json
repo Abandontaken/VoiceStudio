@@ -482,6 +482,9 @@
     "deleteTitle": "Excluir modelo",
     "deleteConfirm": "Excluir {{repoId}}? Você pode reinstalá-lo mais tarde.",
     "deleted": "Excluído {{repoId}}",
+    "engineDeleteTitle": "Excluir mecanismo",
+    "engineDeleteConfirm": "Excluir {{name}} e os arquivos que o VoiceStudio instalou para ele? Os modelos no cache de downloads compartilhado são mantidos. Você pode instalá-lo novamente mais tarde.",
+    "engineDeleteFailed": "Não foi possível excluir",
     "reinstall": "Reinstale",
     "reinstallTitle": "Reinstale o modelo",
     "reinstallConfirm": "Reinstalar {{repoId}}? Isso excluirá a cópia atual e fará o download novamente.",
@@ -1665,6 +1668,10 @@
     "aec_row_title": "Ativar cancelamento de eco para ditado",
     "aec_experimental": "Experimental",
     "aec_hint": "Permite ditar enquanto uma prévia, dublagem ou vídeo é reproduzido sem transcrever o áudio do aplicativo. Adiciona um pouco de processamento; deixe desligado se não ditar durante a reprodução.",
+    "compact_title": "Sobreposição compacta",
+    "compact_row_title": "Sobreposição compacta para ditado com tecla pressionada",
+    "compact_description": "Enquanto você mantém o atalho pressionado, mostra apenas um medidor de nível ao vivo e um cronômetro em vez do gravador completo e da transcrição. O texto continua sendo inserido ao soltar.",
+    "compact_save_failed": "Não foi possível salvar esta configuração. Tente novamente.",
     "cleanup_title": "Limpeza do texto",
     "spoken_punctuation": "Pontuação ditada",
     "spoken_punctuation_desc": "Diga “comma”, “period”, “question mark”, “new line” para digitar. Apenas em inglês."
@@ -2047,9 +2054,11 @@
   "privacy": {
     "translator_online": "O tradutor está online: {{provider}}",
     "analytics_title": "Ajude a melhorar o VoiceStudio",
+    "analytics_subtitle": "Desativado por padrão. Dados anônimos de mecanismo, idioma, duração, número de caracteres e tipos de erro. Nunca texto ou áudio.",
     "translator_offline": "Somente offline",
     "translator_unknown": "Desconhecido",
     "watermark_title": "Marca de água invisível",
+    "watermark_subtitle": "Ativada por predefinição. Marca o áudio gerado como criado por IA para poder ser identificado mais tarde. Afeta apenas o áudio gerado a partir de agora.",
     "change_translator": "Alterar tradutor"
   },
   "updates": {
@@ -2187,6 +2196,7 @@
     "cause_noexec": "A pasta do mecanismo não permite executar programas",
     "hint_noexec": "Esta unidade está montada com noexec. Escolha uma pasta em outra unidade ou remonte-a sem noexec e tente novamente.",
     "cause_download": "O download parou antes de a configuração terminar",
+    "download_failed_host": "Não foi possível baixar de {{host}}.",
     "hint_download": "Tente novamente para continuar. Se continuar parando, use outra rede, desative a VPN ou escolha outra região de download.",
     "cause_illegal_instruction": "O mecanismo parou em uma instrução que este computador não conseguiu executar",
     "hint_illegal_instruction": "Talvez falte ao processador um recurso exigido pelas bibliotecas do mecanismo. Copie o diagnóstico e inclua-o em um relatório com o modelo do processador.",
@@ -4240,6 +4250,8 @@
       "speed": "{{speed}}/s",
       "eta": "Faltam cerca de {{time}}",
       "estimating": "Estimando o tempo restante…",
+      "waiting_metered": "Este Wi-Fi tem tráfego limitado…",
+      "use_connection": "Baixar com esta conexão",
       "waiting_network": "Aguardando conexão…"
     }
   },

@@ -480,6 +480,9 @@
     "deleteTitle": "Modeli sil",
     "deleteConfirm": "{{repoId}} silinsin mi? Daha sonra yeniden yükleyebilirsiniz.",
     "deleted": "Silindi {{repoId}}",
+    "engineDeleteTitle": "Motoru sil",
+    "engineDeleteConfirm": "{{name}} ve VoiceStudio'nun onun için yüklediği dosyalar silinsin mi? Paylaşılan indirme önbelleğindeki modeller korunur. Daha sonra yeniden yükleyebilirsiniz.",
+    "engineDeleteFailed": "Silinemedi",
     "reinstall": "Yeniden yükle",
     "reinstallTitle": "Modeli yeniden yükle",
     "reinstallConfirm": "{{repoId}} yeniden yüklensin mi? Bu, mevcut kopyayı silecek ve tekrar indirecektir.",
@@ -1663,6 +1666,10 @@
     "aec_row_title": "Dikte için yankı gidermeyi etkinleştir",
     "aec_experimental": "Deneysel",
     "aec_hint": "Ön izleme, dublaj veya video oynarken uygulamanın sesini yazıya dökmeden dikte etmenizi sağlar. Biraz işlem ekler; çalma sırasında dikte etmiyorsanız kapalı bırakın.",
+    "compact_title": "Kompakt katman",
+    "compact_row_title": "Basılı tutarak yazdırma için kompakt katman",
+    "compact_description": "Kısayolu basılı tuttuğunuz sürece tam kaydedici ve transkript yerine yalnızca canlı bir seviye göstergesi ve bir zamanlayıcı gösterilir. Bıraktığınızda metin yine eklenir.",
+    "compact_save_failed": "Bu ayar kaydedilemedi. Lütfen tekrar deneyin.",
     "cleanup_title": "Metin temizliği",
     "spoken_punctuation": "Sesli noktalama",
     "spoken_punctuation_desc": "Yazmak için “comma”, “period”, “question mark”, “new line” deyin. Yalnızca İngilizce."
@@ -2045,9 +2052,11 @@
   "privacy": {
     "translator_online": "Çevirmen çevrimiçi: {{provider}}",
     "analytics_title": "VoiceStudio’nun gelişimine katkıda bulun",
+    "analytics_subtitle": "Varsayılan olarak kapalıdır. Motor, dil, süre, karakter sayısı ve hata türlerine ilişkin anonim veriler. Metniniz veya sesiniz asla gönderilmez.",
     "translator_offline": "Yalnızca çevrimdışı",
     "translator_unknown": "Bilinmiyor",
     "watermark_title": "Görünmez filigran",
+    "watermark_subtitle": "Varsayılan olarak açık. Üretilen sesi, sonradan tanınabilmesi için yapay zekâ üretimi olarak işaretler. Yalnızca bundan sonra üretilen sesi etkiler.",
     "change_translator": "Çevirmeni değiştir"
   },
   "updates": {
@@ -2185,6 +2194,7 @@
     "cause_noexec": "Motor klasörü program çalıştırmaya izin vermiyor",
     "hint_noexec": "Bu sürücü noexec ile bağlanmış. Başka bir sürücüde klasör seçin veya sürücüyü noexec olmadan yeniden bağlayıp tekrar deneyin.",
     "cause_download": "İndirme, kurulum bitmeden durdu",
+    "download_failed_host": "{{host}} kaynağından indirilemedi.",
     "hint_download": "Devam etmek için yeniden deneyin. Durmaya devam ederse başka bir ağ deneyin, VPN’i kapatın veya farklı bir indirme bölgesi seçin.",
     "cause_illegal_instruction": "Motor, bu bilgisayarın çalıştıramadığı bir komutta durdu",
     "hint_illegal_instruction": "İşlemcide motor kitaplıklarının gerektirdiği bir özellik eksik olabilir. Tanılama bilgilerini kopyalayıp işlemci modelinizle birlikte bir rapora ekleyin.",
@@ -4238,6 +4248,8 @@
       "speed": "{{speed}}/sn",
       "eta": "Yaklaşık {{time}} kaldı",
       "estimating": "Kalan süre hesaplanıyor…",
+      "waiting_metered": "Bu Wi-Fi sınırlı kotalı…",
+      "use_connection": "Bu bağlantıyla indir",
       "waiting_network": "Bağlantı bekleniyor…"
     }
   },

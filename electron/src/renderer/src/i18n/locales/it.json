@@ -482,6 +482,9 @@
     "deleteTitle": "Elimina modello",
     "deleteConfirm": "Eliminare {{repoId}}? Puoi reinstallarlo più tardi.",
     "deleted": "Eliminato {{repoId}}",
+    "engineDeleteTitle": "Elimina motore",
+    "engineDeleteConfirm": "Eliminare {{name}} e i file che VoiceStudio ha installato per esso? I modelli nella cache di download condivisa vengono mantenuti. Potrai reinstallarlo in seguito.",
+    "engineDeleteFailed": "Impossibile eliminare",
     "reinstall": "Reinstallare",
     "reinstallTitle": "Reinstallare il modello",
     "reinstallConfirm": "Reinstallare {{repoId}}? Ciò eliminerà la copia corrente e verrà scaricata nuovamente.",
@@ -1665,6 +1668,10 @@
     "aec_row_title": "Attiva cancellazione dell'eco per la dettatura",
     "aec_experimental": "Sperimentale",
     "aec_hint": "Consente di dettare durante un'anteprima, un doppiaggio o un video senza trascrivere l'audio dell'app. Aggiunge una lieve elaborazione; lascialo spento se non detti durante la riproduzione.",
+    "compact_title": "Overlay compatto",
+    "compact_row_title": "Overlay compatto per la dettatura a pressione",
+    "compact_description": "Mentre tieni premuta la scorciatoia, mostra solo un indicatore di livello in tempo reale e un timer invece del registratore completo e della trascrizione. Il testo viene comunque inserito al rilascio.",
+    "compact_save_failed": "Impossibile salvare questa impostazione. Riprova.",
     "cleanup_title": "Pulizia del testo",
     "spoken_punctuation": "Punteggiatura dettata",
     "spoken_punctuation_desc": "Di’ “comma”, “period”, “question mark”, “new line” per scriverla. Solo in inglese."
@@ -2047,9 +2054,11 @@
   "privacy": {
     "translator_online": "Il traduttore è online: {{provider}}",
     "analytics_title": "Aiuta a migliorare VoiceStudio",
+    "analytics_subtitle": "Disattivato per impostazione predefinita. Dati anonimi su motore, lingua, durata, numero di caratteri e tipi di errore. Mai testo o audio.",
     "translator_offline": "Solo offline",
     "translator_unknown": "Sconosciuto",
     "watermark_title": "Filigrana invisibile",
+    "watermark_subtitle": "Attiva per impostazione predefinita. Contrassegna l'audio generato come creato dall'IA per poterlo identificare in seguito. Riguarda solo l'audio generato da ora in poi.",
     "change_translator": "Cambia traduttore"
   },
   "updates": {
@@ -2187,6 +2196,7 @@
     "cause_noexec": "La cartella del motore non consente di eseguire programmi",
     "hint_noexec": "Questa unità è montata con noexec. Scegli una cartella su un’altra unità o rimontala senza noexec, poi riprova.",
     "cause_download": "Il download si è interrotto prima della fine della configurazione",
+    "download_failed_host": "Impossibile scaricare da {{host}}.",
     "hint_download": "Riprova per continuare. Se continua a interrompersi, prova un’altra rete, disattiva la VPN o scegli un’altra regione di download.",
     "cause_illegal_instruction": "Il motore si è fermato su un’istruzione che questo computer non ha potuto eseguire",
     "hint_illegal_instruction": "Il processore potrebbe non avere una funzione richiesta dalle librerie del motore. Copia la diagnostica e includila in una segnalazione con il modello del processore.",
@@ -4240,6 +4250,8 @@
       "speed": "{{speed}}/s",
       "eta": "Circa {{time}} rimanenti",
       "estimating": "Stima del tempo rimanente…",
+      "waiting_metered": "Questo Wi-Fi è a consumo…",
+      "use_connection": "Scarica con questa connessione",
       "waiting_network": "In attesa di connessione…"
     }
   },

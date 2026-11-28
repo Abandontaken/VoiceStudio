@@ -480,6 +480,9 @@
     "deleteTitle": "Xóa mô hình",
     "deleteConfirm": "Xóa {{repoId}}? Bạn có thể cài đặt lại nó sau.",
     "deleted": "Đã xóa {{repoId}}",
+    "engineDeleteTitle": "Xóa công cụ",
+    "engineDeleteConfirm": "Xóa {{name}} và các tệp VoiceStudio đã cài đặt cho nó? Các mô hình trong bộ nhớ đệm tải xuống dùng chung được giữ lại. Bạn có thể cài đặt lại sau.",
+    "engineDeleteFailed": "Không thể xóa",
     "reinstall": "Cài đặt lại",
     "reinstallTitle": "Cài đặt lại mô hình",
     "reinstallConfirm": "Cài đặt lại {{repoId}}? Thao tác này sẽ xóa bản sao hiện tại và tải xuống lại.",
@@ -1663,6 +1666,10 @@
     "aec_row_title": "Bật khử tiếng vọng khi đọc chính tả",
     "aec_experimental": "Thử nghiệm",
     "aec_hint": "Cho phép đọc chính tả khi đang phát bản xem trước, lồng tiếng hoặc video mà không chép lại âm thanh của ứng dụng. Thêm một ít xử lý; hãy tắt nếu bạn không đọc khi đang phát.",
+    "compact_title": "Lớp phủ gọn",
+    "compact_row_title": "Lớp phủ gọn cho đọc chính tả nhấn giữ",
+    "compact_description": "Khi bạn giữ phím tắt, chỉ hiển thị thanh đo mức âm thanh trực tiếp và đồng hồ thay vì trình ghi âm đầy đủ và bản chép lời. Văn bản vẫn được chèn khi bạn thả phím.",
+    "compact_save_failed": "Không thể lưu cài đặt này. Vui lòng thử lại.",
     "cleanup_title": "Làm sạch văn bản",
     "spoken_punctuation": "Dấu câu bằng giọng nói",
     "spoken_punctuation_desc": "Nói “comma”, “period”, “question mark”, “new line” để gõ. Chỉ tiếng Anh."
@@ -2045,9 +2052,11 @@
   "privacy": {
     "translator_online": "Người dịch đang trực tuyến: {{provider}}",
     "analytics_title": "Giúp cải thiện VoiceStudio",
+    "analytics_subtitle": "Mặc định tắt. Dữ liệu ẩn danh về bộ máy, ngôn ngữ, thời lượng, số ký tự và loại lỗi. Không gửi văn bản hay âm thanh.",
     "translator_offline": "Chỉ ngoại tuyến",
     "translator_unknown": "Không rõ",
     "watermark_title": "Hình mờ vô hình",
+    "watermark_subtitle": "Bật theo mặc định. Đánh dấu âm thanh được tạo là do AI tạo ra để có thể nhận biết về sau. Chỉ ảnh hưởng đến âm thanh được tạo từ giờ trở đi.",
     "change_translator": "Đổi trình dịch"
   },
   "updates": {
@@ -2185,6 +2194,7 @@
     "cause_noexec": "Thư mục công cụ không cho phép chạy chương trình",
     "hint_noexec": "Ổ đĩa này được gắn với noexec. Hãy chọn thư mục trên ổ khác hoặc gắn lại không có noexec rồi thử lại.",
     "cause_download": "Quá trình tải dừng trước khi thiết lập xong",
+    "download_failed_host": "Không thể tải xuống từ {{host}}.",
     "hint_download": "Thử lại để tiếp tục. Nếu vẫn dừng, hãy dùng mạng khác, tắt VPN hoặc chọn vùng tải khác.",
     "cause_illegal_instruction": "Công cụ dừng ở một lệnh mà máy tính này không chạy được",
     "hint_illegal_instruction": "Bộ xử lý có thể thiếu tính năng mà thư viện của công cụ cần. Hãy sao chép thông tin chẩn đoán và gửi kèm trong báo cáo cùng mẫu bộ xử lý.",
@@ -4238,6 +4248,8 @@
       "speed": "{{speed}}/giây",
       "eta": "Còn khoảng {{time}}",
       "estimating": "Đang ước tính thời gian còn lại…",
+      "waiting_metered": "Wi-Fi này có giới hạn dữ liệu…",
+      "use_connection": "Tải xuống bằng kết nối này",
       "waiting_network": "Đang chờ kết nối…"
     }
   },

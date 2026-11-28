@@ -480,6 +480,9 @@
     "deleteTitle": "モデルの削除",
     "deleteConfirm": "{{repoId}} を削除しますか?後で再インストールできます。",
     "deleted": "{{repoId}} を削除しました",
+    "engineDeleteTitle": "エンジンを削除",
+    "engineDeleteConfirm": "{{name}} と、VoiceStudio がそのためにインストールしたファイルを削除しますか？共有ダウンロードキャッシュ内のモデルは残ります。後で再インストールできます。",
+    "engineDeleteFailed": "削除できませんでした",
     "reinstall": "再インストール",
     "reinstallTitle": "モデルを再インストールする",
     "reinstallConfirm": "{{repoId}} を再インストールしますか?これにより、現在のコピーが削除され、再度ダウンロードされます。",
@@ -1663,6 +1666,10 @@
     "aec_row_title": "音声入力のエコーキャンセルを有効化",
     "aec_experimental": "試験的",
     "aec_hint": "プレビュー、吹き替え、動画の再生中でも、アプリ自身の音声を文字起こしせずに音声入力できます。処理が少し増えるため、再生中に入力しない場合はオフのままにしてください。",
+    "compact_title": "コンパクト表示",
+    "compact_row_title": "押し続けるディクテーション用のコンパクト表示",
+    "compact_description": "ショートカットを押している間、完全なレコーダーと文字起こしの代わりに、リアルタイムのレベルメーターとタイマーだけを表示します。離すと、これまでどおりテキストが挿入されます。",
+    "compact_save_failed": "この設定を保存できませんでした。もう一度お試しください。",
     "cleanup_title": "テキストの整形",
     "spoken_punctuation": "音声による句読点",
     "spoken_punctuation_desc": "“comma”, “period”, “question mark”, “new line” と言うと入力されます。英語のみ。"
@@ -2045,9 +2052,11 @@
   "privacy": {
     "translator_online": "翻訳者はオンラインです: {{provider}}",
     "analytics_title": "VoiceStudio の改善に協力",
+    "analytics_subtitle": "初期設定では無効です。エンジン、言語、所要時間、文字数、エラーの種類を匿名で送信します。テキストや音声は送信しません。",
     "translator_offline": "オフラインのみ",
     "translator_unknown": "不明",
     "watermark_title": "不可視の透かし",
+    "watermark_subtitle": "既定で有効。生成した音声を AI 生成として印付けし、後から識別できるようにします。今後生成する音声にのみ適用されます。",
     "change_translator": "翻訳エンジンを変更"
   },
   "updates": {
@@ -2185,6 +2194,7 @@
     "cause_noexec": "エンジンのフォルダーではプログラムを実行できません",
     "hint_noexec": "このドライブは noexec でマウントされています。別のドライブのフォルダーを選ぶか、noexec なしで再マウントしてから再試行してください。",
     "cause_download": "セットアップが終わる前にダウンロードが止まりました",
+    "download_failed_host": "{{host}} からダウンロードできませんでした。",
     "hint_download": "再試行すると続行します。止まり続ける場合は、別のネットワークを試す、VPN をオフにする、または別のダウンロード地域を選んでください。",
     "cause_illegal_instruction": "このコンピューターで実行できない命令でエンジンが停止しました",
     "hint_illegal_instruction": "エンジンのライブラリに必要な機能がプロセッサーにない可能性があります。診断情報をコピーし、プロセッサーのモデルとともに報告に含めてください。",
@@ -4238,6 +4248,8 @@
       "speed": "{{speed}}/秒",
       "eta": "残り約{{time}}",
       "estimating": "残り時間を推定中…",
+      "waiting_metered": "このWi-Fiは従量制です…",
+      "use_connection": "この接続でダウンロード",
       "waiting_network": "接続を待っています…"
     }
   },
